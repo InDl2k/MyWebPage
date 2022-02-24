@@ -4,14 +4,17 @@
 	<title>Site portfolio</title>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=550px">
-	<link rel="stylesheet" type="text/css" href="css/style.css">
-	<script type="text/javascript" src="scripts/ChangeStyle.js"></script>
+	<link id="pageStyle" rel="stylesheet" type="text/css" href="css/night.css">
+	<script type="text/javascript" src="scripts/changeStyle.js"></script>
+	<script type="text/javascript" src="scripts/getDataFromCF.js"></script>
 </head>
 <body>
 
- <section>
- 	<!--for header-->
- </section>
+<header>
+	<div class="btn">
+		<input id="button" type="button" onclick="changeStyle()">
+	</div>
+</header>
 
  <main id="main">
  	<section class="about">
@@ -22,7 +25,7 @@
 	 				Hi, my name is Yaroslav, I am from Russia, I like to develop software. I am studying new frameworks and libris such as openCV, Django, javaFX, openGL to find myself in them. 
 	 			</p>
 	 			<div class="row">
-	 				<div class="photo"><img src="???" height="184", width="184" onerror="this.src='img/alt.jpg';"></div>
+	 				<div class="photo"><img src="???" height="184", width="184" onerror="this.src='img/altDay.jpg';"></div>
 	 				<div class="shortinfo">
 	 					<div class="title"><h1>Software engineer</h1></div>
 	 					<div class="ulli">
@@ -126,7 +129,8 @@
 		 					<h4>ICPC 1/8 Southern and Volga Russia Qualifier 2021</h4>
 		 					<h4>ICPC VOLGSTU Fall 2021 Contest: 6 place | Team Outsiders</h4>
 		 					<h4>Google Kickstart rank: none</h4>
-		 					<h4>Codefroce rating: 979</h4>
+		 					<h4>Codefroce rating: <span id="rating" class="getterCF">Geting data...</span> | <span id="rank" class="getterCF">Geting data...</span></h4>
+							<h4>Codefroce Max rating: <span id="maxRating" class="getterCF">Geting data...</span> | <span id="maxRank" class="getterCF">Geting data...</span></h4>
 		 					<h4>Codechef rating: none</h4>
 		 					<h4>Leetcode rating: 2 stars</h4>
 		 					<h4>Sphere Online Judge: 7 problems solved</h4>

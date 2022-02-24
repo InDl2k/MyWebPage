@@ -4,21 +4,14 @@
 }
 
 body, html{
-	color: white;
+	color: black;
 	width: 100%;
 	height: 100%;
 }
 
 body{
-	background-color: white;
-	background-image: url("");
-	background-repeat: no-repeat;
-	background-size: cover;
-	background-position: center;
-	background-attachment: fixed;
-
 	margin: 50px  auto 0;
-	background-color: #170227;
+	background-color: white;
 }
 
 h1,h2,h3,h4,h5,h6{
@@ -41,16 +34,15 @@ section{
 	margin-top: 60px;
 	margin-right: 10%;
 	margin-left: 10%;
-	background-color: #090809;
-	border: 2 solid indigo;
+	background-color: white;
+	border: 2 solid gray;
 	border-radius: 5px;
-	box-shadow: 0 0 10px  purple;
+	box-shadow: 0 0 10px  gray;
 }
 
 img{
 	border: 2 solid indigo;
 	border-radius: 5px;
-	box-shadow: 0 0 10px  purple;
 }
 
 div.changer{
@@ -60,7 +52,9 @@ div.changer{
 }
 
 div.title {
-	background-color: #110033;
+	background-color: green;
+	border: 2 solid green;
+	border-radius: 5px;
 }
 
 div.title h1{
@@ -74,8 +68,8 @@ div.zone{
 
 div.container{
 	display: block;
-  	margin-right: auto;
-  	margin-left: auto;
+  margin-right: auto;
+  margin-left: auto;
 }
 
 div.content{
@@ -101,9 +95,8 @@ div.shortinfo{
 }
 
 span.h{
-
-	border-bottom:5px solid purple;
-    padding-bottom:2px;
+	border-bottom:5px solid green;
+  padding-bottom:2px;
 }
 
 .row{
@@ -145,15 +138,14 @@ span.h{
 .progress-bar{
 	height: 10px;
 	margin: 10px;
-	border: 1px solid  #565656;
+	border: 1px solid green;
 	border-radius: 5px;
-	box-shadow: 0 0 10px  purple;
 }
 
 .procent{
 	display: block;
 	height: 100%;
-	background-color: indigo;
+	background-color: green;
 	border-radius: 5px;
 	animation: progress 1500ms ease-in 1;
 }
@@ -211,16 +203,15 @@ span.h{
 .ulli li::before{
 	padding-right: 10px;
 
-	background-color: purple;
+	background-color: green;
 	content: "";
 	display: inline-block;
 	margin-right: 10px;
 	height: 10px;
 	width: 10px;
 
-	border: 2 solid indigo;
+	border: 2 solid gray;
 	border-radius: 5px;
-	box-shadow: 0 0 10px  purple;
 }
 
 .padd{
@@ -235,7 +226,28 @@ span.h{
 svg{
 	width: 60px;
 	height: 60px;
-	fill: purple;
-	border: 2 solid indigo;
-	box-shadow: 0 0 10px  purple;
+	fill: green;
+	border: 2 solid white;
+}
+
+.btn{
+	margin: 25px;
+	position: fixed;
+	top: 0;
+	right: 0;
+}
+
+input{
+	background-color: indigo;
+	color: white;
+	border-radius: 50%;
+	padding: 15px;
+	height: 25px;
+	width: 25px;
+	text-align: center;
+	font-size: 16px;
+}
+
+.getterCF{
+	color: gray;
 }
