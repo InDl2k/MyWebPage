@@ -12,7 +12,7 @@ function setStyle(){
 	const d = new Date();
 	let text = d.toLocaleTimeString();
 	let hh = text.substring(0, 2);
-	if(hh <= 10 && hh >= 18){
+	if(hh <= 10 || hh >= 18){
 		stylesheet.setAttribute('href', 'css/night.css');
 	}
 	else{
